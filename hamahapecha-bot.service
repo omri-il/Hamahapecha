@@ -1,0 +1,15 @@
+[Unit]
+Description=Hamahapecha Marketing Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/Projects/Hamahapecha
+Environment=PATH=/root/Projects/Hamahapecha/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ExecStart=/root/Projects/Hamahapecha/venv/bin/python /root/Projects/Hamahapecha/bot.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
