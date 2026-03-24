@@ -81,7 +81,7 @@ A Telegram bot for repurposing Facebook posts to Instagram. Flow:
 - **Alternative:** Yaakov can do the linking right now (he's had full control since Page creation). Just needs to: Page Settings → Linked Accounts → Instagram → Connect.
 
 ### Next Steps (resume here)
-1. **Link Instagram to Facebook Page:** Either wait until ~March 31, or ask Yaakov to do it
+1. **Link Instagram to Facebook Page:** Omri asking Yaakov to do it (he has full control, no need to wait)
 2. **Meta Developer Console:** Create App → Add Instagram Graph API → Generate Page Access Token with permissions: `instagram_basic`, `instagram_content_publish`, `pages_read_engagement`
 3. **Extend token:** Convert short-lived token (1hr) to long-lived token (60 days)
 4. **Fill `.env`:** Set `INSTAGRAM_ACCESS_TOKEN` and `INSTAGRAM_ACCOUNT_ID`
@@ -94,4 +94,4 @@ A Telegram bot for repurposing Facebook posts to Instagram. Flow:
 - **Registration Form:** TBD
 
 ## Last Updated
-2026-03-24 — Omri got Admin on FB Page, but linking IG blocked for 1 week (eligible ~March 31). Nano Banana Pro skill created globally. Next: link IG then get API tokens.
+2026-03-25 — Omri will ask Yaakov to link Instagram to Facebook Page now (he has full control since Page creation, no waiting needed). Once linked: get API tokens from Meta Developer Console, fill .env, deploy to VPS. Bot code is complete and ready to publish.
