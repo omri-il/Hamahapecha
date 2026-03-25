@@ -78,16 +78,20 @@ A Telegram bot for repurposing Facebook posts to Instagram. Flow:
 - [x] Instagram linked to Facebook Page (2026-03-25)
 
 ### Next Steps (resume here)
-1. **Meta Developer Console:** Create App → Add Instagram Graph API → Generate Page Access Token with permissions: `instagram_basic`, `instagram_content_publish`, `pages_read_engagement`
-2. **Extend token:** Convert short-lived token (1hr) to long-lived token (60 days)
-3. **Fill `.env`:** Set `INSTAGRAM_ACCESS_TOKEN` and `INSTAGRAM_ACCOUNT_ID`
-4. **Deploy to VPS:** Copy project, install deps, configure systemd service, set up nginx for image hosting on port 8090
+All setup complete! Bot is deployed and running.
+
+## Deployment
+- **VPS Path:** `/root/Projects/Hamahapecha`
+- **Service:** systemd `hamahapecha-bot.service`
+- **Image Hosting:** nginx on port 8090 → `/var/www/hamahapecha/images/`
+- **Token Auto-Refresh:** Checks before each publish, refreshes when <7 days remain
+- **Meta App ID:** 785424724637920 (App: "Hamahapecha Bot")
 
 ## Links
 - **GitHub:** https://github.com/omri-il/Hamahapecha
 - **Facebook Page:** https://www.facebook.com/profile.php?id=100083596033122
-- **Instagram:** TBD (needs to be linked to FB Page)
-- **Registration Form:** TBD
+- **Instagram:** Linked to Facebook Page (2026-03-25)
+- **Registration Form:** https://docs.google.com/forms/d/e/1FAIpQLSd0X7iAhKJ9_tbNgLXuJ0bhnFX6aYWNYrkIq-yZDlIG2-2sJA/viewform
 
 ## Last Updated
-2026-03-25 — Instagram linked to Facebook Page. Next: create Meta Developer App, get API tokens, fill .env, deploy to VPS. Bot code is complete and ready to publish.
+2026-03-25 — Fully deployed! Instagram linked, Meta App created (785424724637920), long-lived token with auto-refresh, bot running on VPS as systemd service, nginx serving images on port 8090. Ready to use: send /newpost to the Telegram bot.
