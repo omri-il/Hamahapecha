@@ -34,7 +34,8 @@ A Telegram bot for repurposing Facebook posts to Instagram. Flow:
 - `config.py` — Environment variables (Telegram, Gemini, Instagram, image hosting)
 - `auth.py` — Telegram user authorization
 - `db.py` — SQLite database for tracking posts
-- `gemini_helper.py` — Gemini 2.5 Flash for text reformatting (FB→IG)
+- `gemini_helper.py` — Gemini 2.5 Flash for text reformatting (FB→IG), with Yaakov Hecht voice style guide baked into the prompt
+- `program_info.md` — Program knowledge base: all info about the program, leadership, structure, courses, Yaakov's writing style analysis
 - `image_handler.py` — Nano Banana Pro (gemini-3-pro-image-preview) for image transformation, Pillow fallback
 - `instagram_api.py` — Instagram Graph API publishing
 - `hamahapecha-bot.service` — systemd service file
@@ -47,6 +48,8 @@ A Telegram bot for repurposing Facebook posts to Instagram. Flow:
 ### Environment Variables (in .env)
 - `TELEGRAM_BOT_TOKEN` — Bot token
 - `TELEGRAM_USER_ID` — Authorized user ID
+- `META_APP_ID` — Meta App ID (for token auto-refresh)
+- `META_APP_SECRET` — Meta App Secret (for token auto-refresh)
 - `GEMINI_API_KEY` — Google AI API key
 - `INSTAGRAM_ACCESS_TOKEN` — Meta Graph API token
 - `INSTAGRAM_ACCOUNT_ID` — Instagram business account ID
@@ -94,4 +97,4 @@ All setup complete! Bot is deployed and running.
 - **Registration Form:** https://docs.google.com/forms/d/e/1FAIpQLSd0X7iAhKJ9_tbNgLXuJ0bhnFX6aYWNYrkIq-yZDlIG2-2sJA/viewform
 
 ## Last Updated
-2026-03-25 — Fully deployed! Instagram linked, Meta App created (785424724637920), long-lived token with auto-refresh, bot running on VPS as systemd service, nginx serving images on port 8090. Ready to use: send /newpost to the Telegram bot.
+2026-03-25 — Fully deployed and style-tuned. Instagram linked, Meta App (785424724637920), long-lived token with auto-refresh, bot running on VPS. Gemini prompt rewritten with Yaakov Hecht's voice style guide (based on analysis of 8 real Facebook posts). Program knowledge base created (program_info.md) with full program details, leadership bios, course topics, student projects, admission requirements, partner networks, and marketing quotes. Duplicate Meta App exists (1466606878426991) — should be deleted.
