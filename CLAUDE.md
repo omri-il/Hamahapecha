@@ -75,17 +75,13 @@ A Telegram bot for repurposing Facebook posts to Instagram. Flow:
 - [x] Facebook Page created: https://www.facebook.com/profile.php?id=100083596033122
 - [x] Instagram account exists (needs to be Business/Creator type)
 - [x] Omri got Admin access to the Facebook Page from Yaakov
-
-### Blocked
-- **Link Instagram to Facebook Page:** Facebook requires full control of the Page for **at least 1 week** before you can link Instagram. Omri got access on 2026-03-24, so eligible around **2026-03-31**.
-- **Alternative:** Yaakov can do the linking right now (he's had full control since Page creation). Just needs to: Page Settings → Linked Accounts → Instagram → Connect.
+- [x] Instagram linked to Facebook Page (2026-03-25)
 
 ### Next Steps (resume here)
-1. **Link Instagram to Facebook Page:** Omri asking Yaakov to do it (he has full control, no need to wait)
-2. **Meta Developer Console:** Create App → Add Instagram Graph API → Generate Page Access Token with permissions: `instagram_basic`, `instagram_content_publish`, `pages_read_engagement`
-3. **Extend token:** Convert short-lived token (1hr) to long-lived token (60 days)
-4. **Fill `.env`:** Set `INSTAGRAM_ACCESS_TOKEN` and `INSTAGRAM_ACCOUNT_ID`
-5. **Deploy to VPS:** Copy project, install deps, configure systemd service, set up nginx for image hosting on port 8090
+1. **Meta Developer Console:** Create App → Add Instagram Graph API → Generate Page Access Token with permissions: `instagram_basic`, `instagram_content_publish`, `pages_read_engagement`
+2. **Extend token:** Convert short-lived token (1hr) to long-lived token (60 days)
+3. **Fill `.env`:** Set `INSTAGRAM_ACCESS_TOKEN` and `INSTAGRAM_ACCOUNT_ID`
+4. **Deploy to VPS:** Copy project, install deps, configure systemd service, set up nginx for image hosting on port 8090
 
 ## Links
 - **GitHub:** https://github.com/omri-il/Hamahapecha
@@ -94,4 +90,4 @@ A Telegram bot for repurposing Facebook posts to Instagram. Flow:
 - **Registration Form:** TBD
 
 ## Last Updated
-2026-03-25 — Omri will ask Yaakov to link Instagram to Facebook Page now (he has full control since Page creation, no waiting needed). Once linked: get API tokens from Meta Developer Console, fill .env, deploy to VPS. Bot code is complete and ready to publish.
+2026-03-25 — Instagram linked to Facebook Page. Next: create Meta Developer App, get API tokens, fill .env, deploy to VPS. Bot code is complete and ready to publish.

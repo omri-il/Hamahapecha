@@ -18,5 +18,9 @@ INSTAGRAM_ACCOUNT_ID = os.environ.get("INSTAGRAM_ACCOUNT_ID", "")
 IMAGE_HOST_URL = os.environ.get("IMAGE_HOST_URL", "http://147.79.114.195:8090")
 IMAGE_DIR = os.environ.get("IMAGE_DIR", "/var/www/hamahapecha/images")
 
+# Meta App credentials (for token auto-refresh)
+META_APP_ID = os.environ.get("META_APP_ID", "")
+META_APP_SECRET = os.environ.get("META_APP_SECRET", "")
+
 # Registration form URL
 REGISTRATION_FORM_URL = os.environ.get("REGISTRATION_FORM_URL", "")
