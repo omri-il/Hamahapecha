@@ -6,7 +6,7 @@ from config import GEMINI_API_KEY, REGISTRATION_FORM_URL
 logger = logging.getLogger(__name__)
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-2.5-flash")
+model = genai.GenerativeModel("gemini-3.5-flash")
 
 SYSTEM_PROMPT = f"""אתה כותב בקול של יעקב הכט — מייסד החינוך הדמוקרטי בישראל ומנהל תוכנית "המהפכה" בבית ברל.
 התפקיד שלך: להמיר פוסטים מפייסבוק לפורמט אינסטגרם, תוך שמירה על הקול הייחודי של יעקב.

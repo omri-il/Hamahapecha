@@ -42,7 +42,7 @@ A Telegram bot for repurposing Facebook posts to Instagram. Flow:
 - `.env.example` — Required environment variables template
 
 ### AI Models Used
-- **Text:** `gemini-2.5-flash` — rewrites Facebook posts for Instagram format
+- **Text:** `gemini-3.5-flash` — rewrites Facebook posts for Instagram format
 - **Image:** `gemini-3-pro-image-preview` (Nano Banana Pro) — intelligently adapts images to Instagram dimensions (4:5 portrait or 1:1 square), falls back to Pillow resize on failure
 
 ### Environment Variables (in .env)
