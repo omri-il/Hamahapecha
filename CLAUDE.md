@@ -81,7 +81,7 @@ A Telegram bot for repurposing Facebook posts to Instagram. Flow:
 - [x] Instagram linked to Facebook Page (2026-03-25)
 
 ### Next Steps (resume here)
-All setup complete! Bot is deployed and running.
+⛔ **Bot stopped and disabled on 2026-09-27 at Omri's request** (`systemctl disable --now hamahapecha-bot`, nothing deleted). In six months it never published a post: `posts` was empty, and `posts.db` and the images folder were unchanged since 2026-03-25. Its Telegram token had leaked to the journal (see the httpx rule below), so Omri revokes it in @BotFather, which means the token in the VPS `.env` is dead. **To bring the bot back:** get a new token from @BotFather, replace `TELEGRAM_BOT_TOKEN` in `.env` without it ever passing through a chat or a command line, then `systemctl enable --now hamahapecha-bot`.
 
 ## Deployment
 - **VPS Path:** `/root/Projects/Hamahapecha`
