@@ -89,6 +89,7 @@ All setup complete! Bot is deployed and running.
 - **Image Hosting:** nginx on port 8090 → `/var/www/hamahapecha/images/`
 - **Token Auto-Refresh:** Checks before each publish, refreshes when <7 days remain
 - **Meta App ID:** 785424724637920 (App: "Hamahapecha Bot")
+- ⚠️ **`httpx` and `httpcore` loggers stay at WARNING** (`bot.py`, right after `basicConfig`). At INFO, httpx logs every request URL, and Telegram's URLs contain the bot token — it went to the journal every ~10s from March until 2026-09-27. Never lower them, and keep the lines above any code that starts the bot.
 
 ## Links
 - **GitHub:** https://github.com/omri-il/Hamahapecha
